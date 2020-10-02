@@ -23,7 +23,9 @@ function wrapPromise(promise, state) {
     });
 }
 /**
- * Decorator
+ * Decorator for property getters/setters and member functions.
+ * If the circuit is broken, the function will either return
+ * undefined or resolve to undefined (if it was a Promise).
  *
  * @param {Options} options Options
  * @return {MethodDecorator} Decorator for member functions

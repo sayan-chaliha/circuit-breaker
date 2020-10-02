@@ -1,5 +1,5 @@
 {
-  "name": "circuit-breaker",
+  "name": "@cyan/circuit-breaker",
   "version": "1.0.0",
   "description": "A simple circuit breaker decorator in TypeScript",
   "main": "dist/src/index.js",

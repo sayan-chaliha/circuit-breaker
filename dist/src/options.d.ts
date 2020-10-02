@@ -1,3 +1,6 @@
+/**
+ * Options for Circuit Breaker.
+ */
 export interface Options {
     cooldownPeriod?: number;
     failureThreshold?: number;
