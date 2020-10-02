@@ -70,7 +70,10 @@ export class State {
     this.failures += 1;
     if (this.failures >= this.options.failureThreshold) {
       this.circuit = Circuit.Open;
-      this.nextTry = new Date(Date.now() + this.options.cooldownPeriod);
+      const cooldownFactor = this.failures - this.options.failureThreshold + 1;
+      const cooldownPeriod: number = Math.min(this.options.maxCooldownPeriod,
+          cooldownFactor * this.options.cooldownPeriod);
+      this.nextTry = new Date(Date.now() + cooldownPeriod);
     }
   }
 }
