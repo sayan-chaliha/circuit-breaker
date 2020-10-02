@@ -1,0 +1,32 @@
+{
+  "name": "circuit-breaker",
+  "version": "1.0.0",
+  "description": "A simple circuit breaker decorator in TypeScript",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayan-chaliha/circuit-breaker.git"
+  },
+  "keywords": [
+    "circuit-breaker",
+    "typescript"
+  ],
+  "author": "Sayan Chaliha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sayan-chaliha/circuit-breaker/issues"
+  },
+  "homepage": "https://github.com/sayan-chaliha/circuit-breaker#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.0.3"
+  }
+}
